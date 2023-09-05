@@ -2,4 +2,6 @@ ul {
     list-style-type: none;
     margin: 10;
     padding: 10;
+    overflow: hidden;
+    background-color: darkslategray;
   }
