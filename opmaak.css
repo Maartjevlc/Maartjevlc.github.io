@@ -25,3 +25,7 @@ ul {
   .active {
     background-image: linear-gradient(90deg, midnightblue, indigo,  RebeccaPurple);
   }
+
+  body {
+    background-color:mediumpurple;
+  }
