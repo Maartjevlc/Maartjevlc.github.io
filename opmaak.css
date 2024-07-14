@@ -1,29 +1,120 @@
+/* haalt de puntjes weg en zorgt voor hokjes */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-  .active {
-    background-image: linear-gradient(90deg, midnightblue, indigo,  RebeccaPurple);
-  }
+/* die informatie in het menu staat in de linkerkant van de hokjes */
+li {
+  float: left;
+}
 
- 
+/* zorgt voor de vorm in het hokje, dus kleur van de tekst enzo */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+}
+
+/* maakt een menu hokje zwart als je er met de muis over hovert */
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* maakt de het hokje van de pagina die op het moment open staat groen*/
+.active {
+  background-color: #34c4e4;
+}
+
+.p1 {
+  font-family: Verdana, sans-serif;
+}
+
+/* dit zorgt voor de opmaak van de header (achtergrond kleur en font type) */
+.header {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* maakt twee gelijke kolommen die naast elkaar staan */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  font-family: Verdana, sans-serif;
+}
+
+/* lege stukken tussen de kolommen */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - zorgt dat tukken tekst en afbeeldingen onder elkaar komen te staan op smalle displays */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Zorgt voor een footer onder aan de pagina die laat zien dat de site door mij is gemaakt */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(4 170 109);
+  color: white;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+/* alles met drop hieronder heeft betrekking tot het dropdown menu*/
+.dropbtn {
+background-color: #04AA6D;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
