@@ -1,28 +1,50 @@
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html> <!--Dit is het html-element-->
-    <head>
+<!DOCTYPE html> <!--dit is de uitleg over kleurmodellen-->
+<html><!--dit is het html-element--><head>
         <title>Kleurmodellen</title>
         <link rel="stylesheet" type="text/css" href="opmaak.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-    
-        <ul> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="Kleurmodellen.html" class="active">Kleurmodellen</a></li>
-        </ul>
-        <br>
-        
-         <p>Het GRB-kleurmodel is een manier van kleuren uitdrukken met de hulp van een code van meestal acht cijfers.
-         Hierbij zijn de eerste getallen de hoeveelheid rood, de middelse de hoeveelheid groen en de laatste de hoeveelheid blauw.
-         De waarde per kleur kunnen variëren tussen 0 en 255. Hiermee kunnen 256³= 16 777 216 verschillende kleuren gemaakt worden.</p>
-        <p>Vaak wordt het hexadecimale stelsel gebruikt. Bij het hexadecimale stelsel worden, naast de cijfers 0 tot en met 9, ook de letters A tot en met F gebruikt. Ook bij het hexadecimale stelsel zijn er dus 16⁶= 16 777 216 kleuren uit te drukken.
-         00= niks van een kleur, FF= alles van een kleur</p>
-         <p>Zo is FF0000 zuiver rood, 00FF00 zuiver groen en 0000FF zuiver blauw.</p>
-         <p>Het CMY-K kleurmodel is ook een manier van kleuren uitdrukken. CMY-K maakt hiervoor gebruik van vier kleuren: cyaan, magenta, geel en zwart. 
-        In het RGB-kleurmodel is zwart de afwezigheid van licht, maar in het CMY-K kleurmodel is dat wit. Zwart wordt gemaakt door een combinatie van alle vier de kleuren. CMY-K wordt voornamelijk gebruikt bij het printen van kleuren. 
-        </p>
 
-    </body>
-</html>
+    <!--voegt header toe aan bovenkant pagina-->
+    <body style="background-color:#d9ecff;"><div class="header" style="background-color:#3A506B;">
+        <h1>Uitleg kleurmodellen</h1>
+    </div>
+
+    
+          <!--dit is de navbar -->
+        <ul style="background-color:#4b8aaa;">
+                <li><a href="index.html"><p class="p1">Homepage</p></a></li>
+                <li><a href="binairstelsel.html"><p class="p1">Uitleg binair stelsel</p></a></li>
+                <li><a href="Kleurmodellen.html" class="active"><p class="p1">Uitleg kleurmodellen</p></a></li>
+
+        </ul>   
+        <!--vakken met tekst, wat de row en column doen staat in layout.css -->
+        <div class="row">
+            <div class="column">
+              <h2>Welke kleurmodellen heb je?</h2>
+              <p>Dit is mijn homepage, bla bla bla bla bla bla bla bla.</p>
+              <br>
+              <p>Uitleg kleurmodel 1</p>
+              <br>
+              <p>Uitleg kleurmodel 2</p>
+            </div>
+            <!--voegt aan de recherkant een plaatje toe -->
+            <div class="column">
+              <img src="plaatje.jpg" alt="plaatjes met beide kleurmodellen" width="400px" height="288px"><br>
+              
+              <br><br>
+              
+              <img src="nogeenplaatje.jpg" alt="nog een leuk plaatje voor uitleg of iets" width="400px" height="225px">
+            </div>
+          </div>
+
+                <br>
+                
+                
+                <!--voegt een footer aan de onderkant van mijn site toe -->
+                <div class="footer" style="background-color:#334E68;">
+                  <p>Gemaakt door Maartje Keizer</p>
+                </div>            
+    
+</body></html>
