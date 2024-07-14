@@ -1,18 +1,50 @@
-<!DOCTYPE html> <!--Dit is de homepage van mijn site-->
-<html> <!--Dit is het html-element-->
-    <head>
-        <title>Binair stelsel</title>
+<!DOCTYPE html> <!--dit is de homepage van mijn site-->
+<html><!--dit is het html-element--><head>
+        <title>Binair Stelsel</title>
         <link rel="stylesheet" type="text/css" href="opmaak.css">
-        <meta charset="utg-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        
-        <ul>
-            <li><a href="index.html">Home</a></li>  <!--link terug naar de homepage-->
-            <li><a href="binairstelsel.html" class="active">Binair stelsel</a></li>
-            <li><a href="Kleurmodellen.html">Kleurmodellen</a></li>
-        </ul>
-        <br>
-        Uitleg over het binaire stelsel
-    </body>
-</html>
+
+    <!--voegt header toe aan bovenkant pagina-->
+    <body style="background-color:#d9ecff;"><div class="header" style="background-color:#3A506B;">
+        <h1>Uitleg Binair Stelsel</h1>
+    </div>
+
+    
+          <!--dit is de navbar -->
+        <ul style="background-color:#4b8aaa;">
+                <li><a href="index.html"><p class="p1">Homepage</p></a></li>
+                <li><a href="binairstelsel.html"  class="active"><p class="p1">Uitleg binair stelsel</p></a></li>
+                <li><a href="Kleurmodellen.html"><p class="p1">Uitleg kleurmodellen</p></a></li>
+
+        </ul>   
+        <!--vakken met tekst, wat de row en column doen staat in layout.css -->
+        <div class="row">
+            <div class="column">
+              <h2>Wat is het binair stelsel?/h2>
+              <p>Uitleg over wat het is, bla bla bla bla bla bla bla bla.</p>
+              <br>
+              <p>Nog meer uitleg ofzo?</p>
+              <br>
+              <p>Dit kan je ook altijd weghalen</p>
+            </div>
+            <!--voegt aan de recherkant een plaatje toe -->
+            <div class="column">
+              <img src="eenofanderplaatje.jpg" alt="hier komt een uitlegplaatje" width="400px" height="px"><br>
+              
+              <br><br>
+              
+              <img src="informaticaplaatje2.jpg" alt="nog een leuk voor uitleg eventueel" width="400px" height="px">
+            </div>
+          </div>
+
+                <br>
+                
+                
+                <!--voegt een footer aan de onderkant van mijn site toe -->
+                <div class="footer" style="background-color:#334E68;">
+                  <p>Gemaakt door Maartje Keizer</p>
+                </div>            
+    
+</body></html>
