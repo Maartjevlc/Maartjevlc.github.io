@@ -1,19 +1,50 @@
-<!DOCTYPE html> <!--Dit is de homepage van mijn site-->
-<html> <!--Dit is het html-element-->
-    <head>
+<!DOCTYPE html> <!--dit is de homepage van mijn site-->
+<html><!--dit is het html-element--><head>
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="opmaak.css">
-        <meta charset="utg-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="Kleurmodellen.html">Kleurmodellen</a></li>
-        </ul>
-        
 
-        <img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
-    </body>
-</html>
+    <!--voegt header toe aan bovenkant pagina-->
+    <body style="background-color:#d9ecff;"><div class="header" style="background-color:#3A506B;">
+        <h1>Homepage</h1>
+    </div>
+
+    
+          <!--dit is de navbar -->
+        <ul style="background-color:#4b8aaa;">
+                <li><a href="index.html" class="active"><p class="p1">Homepage</p></a></li>
+                <li><a href="binairstelsel.html"><p class="p1">Uitleg binair stelsel</p></a></li>
+                <li><a href="Kleurmodellen.html"><p class="p1">Uitleg kleurmodellen</p></a></li>
+
+        </ul>   
+        <!--vakken met tekst, wat de row en column doen staat in layout.css -->
+        <div class="row">
+            <div class="column">
+              <h2>Over mijn site</h2>
+              <p>Dit is mijn homepage, bla bla bla bla bla bla bla bla.</p>
+              <br>
+              <p>Informatica is bla bla bla bla.</p>
+              <br>
+              <p>Hier kan je wellicht nog wat tekst neerzetten</p>
+            </div>
+            <!--voegt aan de recherkant een plaatje toe -->
+            <div class="column">
+              <img src="informaticaplaatje1.jpg" alt="leuk plaatje" width="400px" height="288px"><br>
+              
+              <br><br>
+              
+              <img src="informaticaplaatje2.jpg" alt="nog een leuk plaatje" width="400px" height="225px">
+            </div>
+          </div>
+
+                <br>
+                
+                
+                <!--voegt een footer aan de onderkant van mijn site toe -->
+                <div class="footer" style="background-color:#334E68;">
+                  <p>Gemaakt door Maartje Keizer</p>
+                </div>            
+    
+</body></html>
