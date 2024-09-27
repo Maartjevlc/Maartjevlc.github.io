@@ -96,6 +96,10 @@ body {
     display: none;
 }
 
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111; 
+}
+
 .third-level-menu > li
 {
     height: 30px;
