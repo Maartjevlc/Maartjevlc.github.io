@@ -96,7 +96,7 @@ body {
     display: none;
 }
 
-li a:hover, .dropdown:hover .dropdown {
+li a:hover :not(.active), .dropdown:hover .dropdown {
   background-color: #111; 
 }
 
