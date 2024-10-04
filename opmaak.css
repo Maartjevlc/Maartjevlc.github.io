@@ -119,7 +119,7 @@ li a:hover :not(.active), .dropdown:hover .dropdown {
     display: none;
 }
 
-.second-level-menu > li
+.second-level-menu > li:hover
 {
     position: relative;
     height: 30px;
