@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html><!--dit is het html-element--><head>
+<html data-lt-installed="true"><!--dit is het html-element--><head>
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="opmaak.css">
         <meta charset="utf-8">
@@ -7,27 +7,30 @@
     </head>
 
     <!--voegt header toe aan bovenkant pagina-->
-    <body style="background-color:#d9ecff;"><div class="header" style="background-color:#3A506B;">
+    <body style="background-color:#d9ecff;" data-new-gr-c-s-check-loaded="14.1204.0" data-gr-ext-installed=""><div class="header" style="background-color:#3A506B;">
         <h1>Homepage</h1>
     </div>
 
     
           <!--dit is de navbar -->
         <ul style="background-color:#4b8aaa;">
-                <li><a href="index.html" class="active"><p class="p1">Homepage</p></a></li>
-                <li><a href="binairstelsel.html"><p class="p1">Uitleg binair stelsel</p></a></li>
-                <li><a href="Kleurmodellen.html"><p class="p1">Uitleg kleurmodellen</p></a></li>
-                <li><a href="compressie.html"><p class="p1">Uitleg compressie</p></a></li>
-                <li><a href="bitmapvector.html"><p class="p1">Uitleg bitmap en vector</p></a></li>
-                <li class="dropdown">
-                  <a href="fysiekelaag.html" class="dropdown">Drielagenmodel</a>
-                  <div class="dropdown-content">
-                      <a href="fysiekelaag.html">Fysieke laag</a>
-                      <a href="logischelaag.html">Logische laag</a>
-                      <a href="toepassingenlaag.html">Toepassingenlaaglaag</a>
-                  </div>
-
-        </ul>   
+               <li><a href="index.html" class="active">Homepage</a></li>
+        <li><a href="binairstelsel.html">Uitleg binair stelsel</a></li>
+        <li><a href="Kleurmodellen.html">Uitleg kleurmodellen</a></li>
+        <li><a href="compressie.html">Uitleg compressie</a></li>
+        <li><a href="bitmapvector.html">Uitleg bitmap en vector</a></li>
+        <div class="dropdown">
+    <button class="dropbtn">Lagen
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="fysiekelaag.html">Fysieke laag</a>
+      <a href="logischelaag.html">Logische laag</a>
+      <a href="toepassingenlaag.html">Toepassingen Laag</a>
+    </div>
+  </div> 
+    </ul>
+   
         <!--vakken met tekst, wat de row en column doen staat in layout.css -->
         <div class="row">
             <div class="column">
@@ -56,4 +59,5 @@
                   <p>Gemaakt door Maartje Keizer</p>
                 </div>            
     
+
 </body></html>
